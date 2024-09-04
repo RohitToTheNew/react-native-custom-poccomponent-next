@@ -3,3 +3,5 @@
 //for commit -> commands
 git add .
 git commit -n -m "Hello World"  
+
+//then sync
