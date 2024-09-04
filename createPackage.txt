@@ -1,0 +1,5 @@
+// https://www.mindbowser.com/how-to-create-npm-package-for-react-native/
+
+//for commit -> commands
+git add .
+git commit -n -m "Hello World"  
