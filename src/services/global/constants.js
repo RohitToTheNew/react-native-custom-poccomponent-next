@@ -1,0 +1,6 @@
+export const NET_STATE = 'NET_STATE';
+
+export const TIMEOUT_ERROR = 'TIMEOUT_ERROR';
+export const SERVICE_SUCCESS = 'SERVICE_SUCCESS';
+export const SERVICE_INPROGRESS = 'SERVICE_INPROGRESS';
+export const SERVICE_FAIL = 'SERVICE_FAIL';
