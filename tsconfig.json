@@ -2,14 +2,19 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "react-native-custom-poccomponent-next": ["./src/index"]
+      "react-native-custom-poccomponent-next": [
+        "./src/index"
+      ]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "jsx": "react-jsx",
-    "lib": ["ESNext"],
+    "lib": [
+      "ESNext"
+    ],
+    "allowJs": true,
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "noEmit": true,

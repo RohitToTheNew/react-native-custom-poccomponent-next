@@ -2,7 +2,6 @@
 //   return Promise.resolve(a * b);
 // }
 
-import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import Routes from './navigation/Routes';
 import { Provider } from 'react-redux';
