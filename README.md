@@ -39,44 +39,40 @@ After following the steps provided in the above doc for iOS bridging, add the be
 <br/>To open React Native POC screen
 
 ```sh 
-**@IBAction** **func** onTapped(_ sender: UIButton) {
+@IBAction func onTapped(_ sender: UIButton) {
 
-**let** jsCodeLocation = URL(string: "<http://localhost:8081/index.bundle?platform=ios>")!
+let jsCodeLocation = URL(string: "<http://localhost:8081/index.bundle?platform=ios>")!
 
-**let** mockData:NSDictionary = \["accessToken":
+let mockData:NSDictionary = ["accessToken":"<accessToken>"]
 
-"&lt;accessToken&gt;"
-
-\]
-
-**let** rootView = RCTRootView(
+let rootView = RCTRootView(
 
 bundleURL: jsCodeLocation,
 
 moduleName: "POCScreen",
 
-initialProperties: mockData **as** \[NSObject : AnyObject\],
+initialProperties: mockData as \[NSObject : AnyObject\],
 
-launchOptions: **nil**
+launchOptions: nil
 
 )
 
-**let** vc = UIViewController()
+let vc = UIViewController()
 
 vc.view = rootView
 
 vc.modalPresentationStyle = .fullScreen
 
-**self**.present(vc, animated: **true**, completion: **nil**)
+self.present(vc, animated: true, completion: nil)
 
 }
 
 }
 ```
 
+<br/>
 
-<br/>**Bridging for Android  
-**  
+**Bridging for Android**  
 Refer to the below doc for native bridging - Android:  
 [Integration with Existing Apps - Android · React Native](https://reactnative.dev/docs/integration-with-existing-apps?language=java)  
 For navigation from "native android to react native" and "react native to native android", need to add two files (Connectivity.java and ConnectivityPackage.java) in native android code, which is available under assets folder (src/assets/androidResources).
