@@ -75,7 +75,7 @@ self.present(vc, animated: true, completion: nil)
 **Bridging for Android**  
 Refer to the below doc for native bridging - Android:  
 [Integration with Existing Apps - Android · React Native](https://reactnative.dev/docs/integration-with-existing-apps?language=java)  
-For navigation from "native android to react native" and "react native to native android", need to add two files (Connectivity.java and ConnectivityPackage.java) in native android code, which is available under assets folder (https://github.com/RohitToTheNew/react-native-custom-poccomponent-next/tree/main/resources).
+For navigation from "native android to react native" and "react native to native android", need to add two files (Connectivity.java and ConnectivityPackage.java) in native android code, which is available under assets folder (https://github.com/RohitToTheNew/react-native-custom-poccomponent-next/tree/main/resources/Android).
 To open React Native POC screen:   
 
 ```sh 
